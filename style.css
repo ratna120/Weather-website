@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px;
+    //border: 1px solid #000; /* Optional: for visualizing the container */
+}
+
+.main {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input {
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background: #0C0C0C;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.input input[type="text"] {
+    height: 4rem;
+    width: 20rem;
+    background-color: #0C0C0C;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    margin-right: 4px;
+    color: white;
+}
+
+.input input[type="submit"] {
+    height: 3rem;
+    width: 6rem;
+    background: white;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.input input[type="submit"]:hover {
+    background-color: #344C64;
+    color: white;
+}
+
+.display {
+    text-align: center;
+    width: 100%;
+    color: #0C0C0C;
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 800px;
+    background: #577B8D;
+    height: 100%;
+    margin: 50px auto;
+    border-radius: 2px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper h2 {
+    padding: 5px 0;
+    text-align: center;
+    background: #0C0C0C;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wrapper p {
+    margin: 20px;
+    text-align: left;
+    color: #0C0C0C;
+    font-size: 23px;
+    width: 100%;
+}
+
+.wrapper h2 span {
+    font-size: 26px;
+    color: #B9B4C7;
+}
+
+.wrapper p span {
+    font-size: 25px;
+    color: #B9B4C7;
+}
+#weatherChart {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background color */
+    border-radius: 5px; /* Optional: to give a rounded corner look */
+}
+@media (max-width: 750px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .main {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .main h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .input {
+        padding: 1rem 0;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .input .input-wrapper {
+        flex-direction: column;
+    }
+
+    .input input[type="text"] {
+        height: 3rem;
+        width: 16rem;
+        font-size: 0.9rem;
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    .input input[type="submit"] {
+        height: 2.5rem;
+        width: 5rem;
+        font-size: 0.9rem;
+        margin: 5px 0;
+        margin-top:20px;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .wrapper h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .wrapper p {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    #weatherChart {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
